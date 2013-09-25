@@ -1,0 +1,33 @@
+Segment timer
+
+(c) Mark K Cowan, mark@battlesnake.co.uk
+
+Compile with Delphi / Freepascal / Lazarus on WINDOWS
+
+Alerts you at fixed intervals.
+
+To aid with time management and multitasking, some people (strangely, arty types)
+like to take a very computer-science approach to their work, by timeslicing the day
+into fixed chunks and working on a different project in each chunk, much like a
+typical multi-tasking operating system.  The main difference is that they generally
+refuse to work on the same task in two consecutive timeslices.
+
+Notification types:
+  * Flash scroll-lock
+  * Annoying beep
+  * Shaking dialog
+
+Optional command line / shortcut parameters (e.g. in yout Startup folder):
+  Segtimer.exe <slice> <notifications>
+    * <slice> = time in minutes before alerst
+    * notifications = subset of letters from "FBP", with no spaces between
+      - F = flashing scroll-lock
+      - B = beep
+      - P = popup
+  e.g. my Segtimer shortcut in Startup uses the following command line:
+  	Segtimer.exe 40 FB
+
+Tray-icon commands:
+  * Left-double-click  = Restart the timer
+  * Right-double-click = Quit segtimer
+  * Middle-click       = Show configuration dialog (allows you to change interval & notifications)

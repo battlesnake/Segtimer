@@ -1,0 +1,7 @@
+*.dcu
+Notw.exe
+*.bdsproj
+*.local
+*.identcache
+__history/*
+*.~*
